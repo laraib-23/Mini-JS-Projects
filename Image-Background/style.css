@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background: #eef8ff;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-box {
+    width: 60%;
+    margin: auto;
+    line-height: 0;
+    background-image: url('images/background.png');
+    position: relative;
+    overflow: hidden;
+}
+.transparent-img {
+    width: 100%;
+}
+.img-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%; /* Initial visible width */
+    height: 100%;
+    overflow: hidden;
+}
+#line {
+    width: 1px;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 20%; /* Matches initial img-wrap width */
+    cursor: ew-resize;
+}
+.arrow {
+    width: 40px;
+    position: absolute;
+    top: 50%;
+    margin-left: -20px;
+    margin-top: -20px;
+}
